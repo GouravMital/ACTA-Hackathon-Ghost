@@ -20,7 +20,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const Icon = project.icon;
 
   return (
-    <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-slate-100 hover:border-slate-200 transform hover:-translate-y-2">
+    <div className="group relative bg-white/5 backdrop-blur-xl rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-white/10 hover:border-white/20 transform hover:-translate-y-2">
       <div className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${project.color}`}></div>
 
       <div className="p-8">
@@ -28,13 +28,13 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           <Icon className="w-8 h-8 text-white" />
         </div>
 
-        <h3 className="text-2xl font-bold text-slate-900 mb-2">
+        <h3 className="text-2xl font-bold text-white mb-2">
           {project.title}
         </h3>
-        <p className="text-sm font-semibold text-slate-500 mb-4">
+        <p className="text-sm font-semibold text-slate-400 mb-4">
           {project.subtitle}
         </p>
-        <p className="text-slate-600 mb-6 leading-relaxed">
+        <p className="text-slate-300 mb-6 leading-relaxed">
           {project.description}
         </p>
 
@@ -42,7 +42,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
           {project.tags.map((tag) => (
             <span
               key={tag}
-              className="px-3 py-1 bg-slate-50 text-slate-600 text-xs font-medium rounded-full border border-slate-200"
+              className="px-3 py-1 bg-white/10 text-slate-300 text-xs font-medium rounded-full border border-white/20"
             >
               {tag}
             </span>
@@ -55,7 +55,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               <div className={`mt-0.5 p-0.5 rounded-full bg-gradient-to-br ${project.color}`}>
                 <Check className="w-4 h-4 text-white" />
               </div>
-              <span className="text-sm text-slate-700">{feature}</span>
+              <span className="text-sm text-slate-300">{feature}</span>
             </div>
           ))}
         </div>
@@ -69,7 +69,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </a>
       </div>
 
-      <div className="absolute -bottom-24 -right-24 w-48 h-48 bg-gradient-to-br from-slate-50 to-transparent rounded-full opacity-50 group-hover:scale-150 transition-transform duration-700"></div>
+      <div className="absolute -bottom-24 -right-24 w-48 h-48 bg-gradient-to-br from-white/10 to-transparent rounded-full opacity-50 group-hover:scale-150 transition-transform duration-700"></div>
     </div>
   );
 }

@@ -10,7 +10,7 @@ export default function Footer() {
               <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center">
                 <Sparkles className="w-6 h-6 text-white" />
               </div>
-              <span className="text-2xl font-bold">ACTA-Ghost</span>
+              <span className="text-2xl font-bold">AI Studio</span>
             </div>
             <p className="text-slate-400 leading-relaxed mb-6 max-w-md">
               Building the future of AI-powered platforms for startups, creators, and innovators.
@@ -100,7 +100,7 @@ export default function Footer() {
         <div className="border-t border-slate-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-slate-400 text-sm">
-              © 2025 ACTA-Ghost. All rights reserved.
+              © 2025 AI Studio. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#privacy" className="text-slate-400 hover:text-white transition-colors">
