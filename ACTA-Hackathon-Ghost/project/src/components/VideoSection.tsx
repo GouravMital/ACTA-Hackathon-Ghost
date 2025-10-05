@@ -21,7 +21,7 @@ export default function VideoSection() {
           <div className="aspect-video">
             <iframe
               className="w-full h-full"
-              src=" "
+              src=" https://youtu.be/JVTYv3-TwDw "
               title="AI Studio Demo"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
