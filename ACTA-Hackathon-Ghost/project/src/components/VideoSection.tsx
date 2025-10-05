@@ -21,8 +21,8 @@ export default function VideoSection() {
           <div className="aspect-video">
             <iframe
               className="w-full h-full"
-              src=" https://youtu.be/JVTYv3-TwDw "
-              title="AI Studio Demo"
+              src="https://www.youtube.com/embed/Fp_AlGWHLxI"
+              title="ACTA Ghost Demo"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
@@ -34,7 +34,6 @@ export default function VideoSection() {
 
       <div className="mt-12 text-center">
         <p className="text-slate-400 text-sm">
-          Replace the video URL with your own YouTube video ID in the src attribute
         </p>
       </div>
     </section>
